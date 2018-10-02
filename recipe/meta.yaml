@@ -9,7 +9,7 @@ source:
   sha256: 8b995ffe925347a2138d7ac0fe77155e4311a0ea6d6da4f5128fe4b3cbe5ed71
 
 build:
-  number: 0
+  number: 1000
   skip: true  # [not osx]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
