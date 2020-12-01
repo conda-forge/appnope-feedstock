@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: appnope
@@ -6,14 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/appnope/appnope-{{ version }}.tar.gz
-  sha256: 8b995ffe925347a2138d7ac0fe77155e4311a0ea6d6da4f5128fe4b3cbe5ed71
+  sha256: caeb46680dc3859d6dfa0ca18e70778dbac4d9cf33502a4ff228714ba1e513a0
   patches:
-   - 0001-Fix-for-Apple-Silicon-and-older.patch  # [osx]
+    - 0001-Fix-for-Apple-Silicon-and-older.patch # [osx]
 
 build:
-  number: 1003
+  number: 0
   skip: true  # [not osx]
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   build:
