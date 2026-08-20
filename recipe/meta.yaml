@@ -1,18 +1,18 @@
 {% set name = "appnope" %}
-{% set version = "0.1.4" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/appnope-{{ version }}.tar.gz
-  sha256: 1de3860566df9caf38f01f86f65e0e13e379af54f9e4bee1e66b48f2efffd1ee
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/appnope-{{ version }}.tar.gz
+  sha256: 685db59cb6043c3c2e528adc0b3bce3a5f8d09bcf7492c6ea650d1b7421f3c49
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
