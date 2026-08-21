@@ -3,15 +3,13 @@ About appnope-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/appnope-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/minrk/appnope
+Home: https://pypi.org/project/appnope/
 
 Package license: BSD-2-Clause
 
-Summary: Disable App Nap on macOS >=10.9
+Summary: Disable App Nap on macOS >= 10.9
 
-Development: http://github.com/minrk/appnope
-
-Documentation: https://github.com/minrk/appnope
+Development: https://github.com/minrk/appnope
 
 Current build status
 ====================
